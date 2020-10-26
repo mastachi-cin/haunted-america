@@ -1,0 +1,183 @@
+/* ----------------------------Texts---------------------------------------*/ 
+h1 {
+  color: black;
+  text-align: center;
+  font-family: system-ui;
+}
+option {
+font-size: 20;
+}
+th {
+color: black;
+text-align: center;
+font-family: system-ui;
+}
+
+
+/* ----------------------------CONTAINERS---------------------------------------*/ 
+
+.containerbody {
+  width: 0 auto;
+  margin: 0 auto;
+  padding-left:40px;
+  padding-right:40px;
+  padding-top: 60px;
+  font-family: system-ui;
+  
+}
+.buttoncontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui;
+}
+
+
+
+
+/* ----------------------------NAVBAR---------------------------------------*/  
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-family: system-ui;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 18px 16px;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(247, 220, 162);
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #ff6600;
+  color: rgb(0, 0, 0);
+}
+.topnav a.logo {
+  background-color: #ff6600;
+  color: #f2f2f2;
+}
+/* ----------------------------BUTTON---------------------------------------*/  
+
+.button {
+  background-color: white;
+  color: black;
+  border: 3px solid #555555;
+  font-size: 22px;
+  font-family: system-ui;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+
+.button:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  height: auto;
+  padding: 10px;
+  
+
+}
+
+* {
+  box-sizing: border-box;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.rowimg {
+  align-items: center;
+  content: "";
+  display: table;
+  clear: both;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1920px) {
+  .column {
+    width: 50%;
+  }
+}
+
+label {
+  color: black;
+  text-align: center;
+  font-family: system-ui;
+}
+datalist {
+  position: absolute;
+  background-color: lightgrey;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+}
+
+option {
+  background-color: #bbb;
+  padding: 4px;
+  margin-bottom: 1px;
+  cursor: pointer;
+}
+img{
+  max-width: 60%;
+  align-self: center;
+  display: block; /* remove extra space below image */
+}
+.bar {
+height: 200;
+}
+
+table {
+border-collapse: collapse;
+width: 100%;
+}
+
+th, td {
+text-align: left;
+padding: 8px;
+}
+table, th, td {
+border: 1px solid black;
+}
+
+#map {
+  height: 700px;
+
+}
+
+.cluster {
+  background: #D47013;
+  border-radius: 50%;
+  text-align: center;
+  color: #560A80;
+  font-weight: 700;
+  border: 1px solid #D47013;
+  font-family: system-ui;
+}
