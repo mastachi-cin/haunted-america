@@ -25,25 +25,24 @@ Locations = Base.classes.locations
 # Create an instance of Flask
 app = Flask(__name__)
 
+# Route to render home.html template
 @app.route("/")
 def home():
     return render_template("home.html")
 
+# Route to render map.html template
 @app.route("/map")
 def map():
     return render_template("map.html")
 
+# Route to render data.html template
 @app.route("/data")
 def data():
     return render_template("data.html")
 
-# Route to render index.html template using data from Mongo
+# Route to get all locations
 @app.route("/api/locations")
 def locations():
-
-    #'''
-    #Access-Control-Allow-Origin:*
-    #'''
 
     # Create our session (link) from Python to the DB
     session = Session(engine)
@@ -71,7 +70,7 @@ def locations():
     return jsonify(loc_ls)
 
 
-# Route that will trigger the scrape function
+# Route to get locations by state
 @app.route("/api/<state>")
 def find_state(state):
 
